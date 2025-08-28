@@ -25,8 +25,7 @@ A função começa recebendo como parâmetros os números a serem multiplicados,
  if x < 10 or y < 10:
         return x * y
 ```
-Posteriormente, o algoritmo verifica a condicional que representa o caso base da recursão. Se os números tiverem apenas um dígito, é realizada a multiplicação entre eles e o resultado é retornado. Esse é o caso base porque com apenas um dígito, não é possível dividir os números.
-
+Posteriormente, o algoritmo verifica a condicional que representa o caso base da recursão. Se os números tiverem apenas um dígito, é realizada a multiplicação entre eles e o resultado é retornado. 
 
 ```python
 n = max(len(str(x)), len(str(y)))
