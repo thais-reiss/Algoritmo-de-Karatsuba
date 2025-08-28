@@ -110,7 +110,9 @@ Grafo criado:
 
 **Complexidade ciclomática:** 
 M = E - N + 2P
+
 M = 16 - 14 + 2*1
+
 M = 4
 
 ## Complexidade Assintótica
