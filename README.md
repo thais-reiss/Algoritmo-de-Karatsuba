@@ -68,7 +68,53 @@ return a * (10**(2*meio)) + d * (10**meio) + b
 ```
 E, por fim, é retornado o resultado final da multiplicação de x e y, realizando deslocamentos de dígitos e multiplicação de 3 termos.
 
-## Análise ciclomática
+## Complexidade ciclomática
 
 Grafo criado:
+
 ![Grafo](grafo-karatsuba.png)
+
+**Nós:**
+1. N1 - início da função
+2. N2 - verificação da condicional
+3. N3 - retorno de x * y
+4. N4 - inicialização de n
+5. N5 - inicialização de meio
+6. N6 - definição de x_maior
+7. N7 - definição de x_menor
+8. N8 - definição de y_maior
+9. N9 - definição de y_menor
+10. N10 - primeira chamada recursiva
+11. N11 - segunda chamada recursiva
+12. N12 - terceira chamada recursiva
+13. N13 - atribuição do valor de d
+14. N14 - retorno final
+
+**Arestas:**
+1. N1 -> N2: Do início da função para a verificação da condicional
+2. N2 -> N3: Caso a condição seja verdadeira, do condicional vai para o retorno de x*y
+3. N2 -> N4: Caso a condição seja falsa, vai do condicional para a inicialização de n
+4. N4 -> N5: Da inicialização de n para a inicialização de meio
+5. N5 -> N6: Da inicialização de meio mara a definição de x_maior
+6. N6 -> N7: Da definição de x_maior para a definição de x_menor
+7. N7 -> N8: Da definição de x_menor para a definição de y_maior
+8. N8 -> N9: Da definição de y_maior para a definição de y_menor
+9. N9 -> N10: Da definicão de y menor para a primeira chamada recursiva
+10. N10 -> N1: Da primeira função recursiva para o início da função (quando ela chama a si própria)
+11. N10 -> N11: Da primeira chamada recursiva para a segunda chamada recursiva
+12. N11 -> N1: Da segunda função recursiva para o início da função
+13. N11 -> N12: Da segunda função recursiva para a terceira função recursiva
+14. N12 -> N1: Da terceira função recursiva para o início da função
+15. N12 -> N13: Da terceira função recursiva para a atribuição do valor de d
+16. N13 -> N14: Da atriuição do valor de d para o retorno final
+
+**Complexidade ciclomática:** 
+M = E - N + 2P
+M = 16 - 14 + 2*1
+M = 4
+
+## Complexidade Assintótica
+**Melhor Caso:** O(1), quando um dos números tem apenas um dígito.
+**Caso Médio:** O(n^log3), o que é aproximadamente O(n^log1.585)
+**Pior Caso:** O(n^log3), o que é aproximadamente O(n^log1.585)
+
