@@ -4,7 +4,7 @@
 Este projeto apresenta uma implementação em python do algoritmo de Karatsuba, bem como a análise de complexidade assintótica e ciclomática deste algoritmo.
 
 ## O que é o Algoritmo de Karatsuba?
-O algoritmo de Karatsuba é um método para realizar multiplicações de números grandes de uma maneira mais eficiente do que a tradicional que aprendemos na escola.
+O algoritmo de Karatsuba é um método para realizar multiplicações de números grandes de uma maneira mais eficiente do que a tradicional, que aprendemos na escola.
 Esse trabalha utilizando a ideia de dividir para conquistar, pois apresenta uma implementação recursiva, dividindo os números ao meio a cada nova chamada. Com isso, ele reduz o número de multiplicações necessárias, o que é muito útil para números com muitos dígitos.
 
 ## Como rodar o projeto
