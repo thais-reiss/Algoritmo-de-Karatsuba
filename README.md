@@ -118,6 +118,8 @@ M = 4
 
 ## Complexidade Assintótica
 **Melhor Caso:** O(1), quando um dos números tem apenas um dígito.
-**Caso Médio:** O(n^log3), o que é aproximadamente O(n^log1.585)
-**Pior Caso:** O(n^log3), o que é aproximadamente O(n^log1.585)
+
+**Caso Médio:** O(n^log3), o que é aproximadamente O(n^log1.585).
+
+**Pior Caso:** O(n^log3), o que é aproximadamente O(n^log1.585).
 
