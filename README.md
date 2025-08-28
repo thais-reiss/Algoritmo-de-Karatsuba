@@ -74,6 +74,23 @@ Grafo criado:
 
 ![Grafo](grafo-karatsuba.png)
 
+**Fluxo de controle:**
+1. Início da função
+2. Verificação da condição if
+   - Se verdadeiro: retorna x*y
+   - Se falso: passa para o próximo comando
+3. Inicialização de n
+4. Inicialização de meio
+5. Inicialização de x_maior
+6. Inicialização de x_menor
+7. Inicialização de y_maior
+8. Inicialização de y_menor
+9. Primeira chamada recursiva da função
+10. Segunda chamada recursiva da função
+11. Terceira chamada recursiva da função
+12. Inicialização de d
+13. Retorno final
+
 **Nós:**
 1. N1 - início da função
 2. N2 - verificação da condicional
@@ -122,4 +139,3 @@ M = 4
 **Caso Médio:** O(n^log3), o que é aproximadamente O(n^log1.585).
 
 **Pior Caso:** O(n^log3), o que é aproximadamente O(n^log1.585).
-
