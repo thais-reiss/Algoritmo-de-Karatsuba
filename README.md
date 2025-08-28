@@ -77,7 +77,7 @@ Grafo criado:
 **Fluxo de controle:**
 1. Início da função
 2. Verificação da condição if
-   - Se verdadeiro: retorna x*y
+   - Se verdadeiro: retorna x * y
    - Se falso: passa para o próximo comando
 3. Inicialização de n
 4. Inicialização de meio
