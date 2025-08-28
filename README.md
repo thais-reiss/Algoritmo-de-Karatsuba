@@ -54,7 +54,7 @@ Em seguida, os números x e y são divididos em partes mais significativas e men
   c = karatsuba(x_maior + x_menor, y_maior + y_menor)
   b = karatsuba(x_menor, y_menor)
 ```
-Posteriormente, são realizadas as chamadas recursivas. A chamada recusriva retornada para a variável a realiza o produto das partes mais significativas, enquanto a chamada recusiva que retorna para a variável b realiza o produto das menos significativas. Já a da variável c é usada para calcular a multiplicação da soma das partes.
+Posteriormente, são realizadas as chamadas recursivas. A chamada recursiva retornada para a variável a realiza o produto das partes mais significativas, enquanto a chamada recusiva que retorna para a variável b realiza o produto das menos significativas. Já a da variável c é usada para calcular a multiplicação da soma das partes.
 
 
 ```python
