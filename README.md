@@ -69,3 +69,6 @@ return a * (10**(2*meio)) + d * (10**meio) + b
 E, por fim, é retornado o resultado final da multiplicação de x e y, realizando deslocamentos de dígitos e multiplicação de 3 termos.
 
 ## Análise ciclomática
+
+Grafo criado:
+![Grafo](grafo-karatsuba.png)
