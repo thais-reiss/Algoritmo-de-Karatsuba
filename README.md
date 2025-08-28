@@ -109,6 +109,7 @@ Grafo criado:
 16. N13 -> N14: Da atriuição do valor de d para o retorno final
 
 **Complexidade ciclomática:** 
+
 M = E - N + 2P
 
 M = 16 - 14 + 2*1
